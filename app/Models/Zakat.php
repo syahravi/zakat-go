@@ -19,7 +19,8 @@ class Zakat extends Model
         'description',
         'amount',
         'id_thumbnail',
-        'id_type',
-        'id_partner',
+        'type_id',
+        'admin_id',
+        'partner_id',
     ];
 }
