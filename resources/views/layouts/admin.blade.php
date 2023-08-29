@@ -1,9 +1,13 @@
 @extends('layouts.base')
 
 @section('body')
-    @yield('content')
-    
-    @isset($slot)
-        {{ $slot }}
-    @endisset
+    <div class="flex flex-row">
+        <!-- Sidebar -->
+        @include('components.admin-sidebar')
+        @yield('content')
+        
+        @isset($slot)
+            {{ $slot }}
+        @endisset
+    </div>
 @endsection
