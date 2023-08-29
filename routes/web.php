@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\EmailVerificationController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\WelcomeController;
 use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\Auth\Passwords\Confirm;
 use App\Http\Livewire\Auth\Passwords\Email;
@@ -20,15 +21,41 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [WelcomeController::class, 'index'])->name('home');
 
-Route::view('/', 'welcome')->name('home');
+// *Zakat Sekarang
+Route::group([
+    'prefix' => 'zakat-sekarang',
+    'as' => 'zakat-sekarang.',
+    'namespace' => 'App\Http\Controllers',
+    'controller' => 'ZakatSekarangController'
+], function () {
+    Route::get('/', 'index')->name('index');
+    Route::get('{id_zakat_sekarang}', 'show')->name('show');
+});
 
-Route::view('zakat-sekarang', 'user.zakat-sekarang.index');
-Route::view('zakat-sekarang/{id_zakat_sekarang}', 'user.zakat-sekarang.show');
-Route::view('zakat-produktif', 'user.zakat-produktif.index');
-Route::view('zakat-produktif/{id_zakat_produktif}', 'user.zakat-produktif.show');
-Route::view('zakat-market', 'user.zakat-market.index');
-Route::view('zakat-market/{id_zakat_market}', 'user.zakat-market.show');
+// *Zakat Produktif
+Route::group([
+    'prefix' => 'zakat-produktif',
+    'as' => 'zakat-produktif.',
+    'namespace' => 'App\Http\Controllers',
+    'controller' => 'ZakatProduktifController'
+], function () {
+    Route::get('/', 'index')->name('index');
+    Route::get('{id_zakat_produktif}', 'show')->name('show');
+});
+
+// *Zakat Market
+Route::group([
+    'prefix' => 'zakat-market',
+    'as' => 'zakat-market.',
+    'namespace' => 'App\Http\Controllers',
+    'controller' => 'ZakatMarketController'
+], function () {
+    Route::get('/', 'index')->name('index');
+    Route::get('{id_zakat_market}', 'show')->name('show');
+});
+
 
 Route::view('admin/dashboard', 'admin.dashboard');
 Route::view('admin/dashboard/zakat-sekarang', 'admin.zakat-sekarang.index');
@@ -41,7 +68,7 @@ Route::middleware('guest')->group(function () {
         ->name('login');
 
     Route::get('register', Register::class)
-        ->name('register');
+        ->name('register');    
 });
 
 Route::get('password/reset', Email::class)
@@ -57,9 +84,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('password/confirm', Confirm::class)
         ->name('password.confirm');
-});
 
-Route::middleware('auth')->group(function () {
+
     Route::get('email/verify/{id}/{hash}', EmailVerificationController::class)
         ->middleware('signed')
         ->name('verification.verify');
