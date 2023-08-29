@@ -35,9 +35,10 @@
                                 <h3 class="text-start">
                                     <span class="font-bold">Zakat Sekarang</span> adalah platform yang memudahkan umat Muslim untuk membayar zakat secara online.
                                 </h3>
-                                <button class="rounded-xl outline outline-1 hover:bg-slate-600 hover:text-white p-2 mt-3 w-full">
-                                    <a href="/zakat-sekarang" class="font-semibold">Lihat Selengkapnya</a>
-                            </button>
+                                <a href="/zakat-sekarang" class="font-semibold">
+                                    <button class="rounded-xl outline outline-1 hover:bg-slate-600 hover:text-white p-2 mt-3 w-full">Lihat Selengkapnya
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -50,9 +51,10 @@
                                 <h3 class="text-start">
                                     <span class="font-bold">Zakat Produktif</span> adalah bentuk zakat yang khusus dialokasikan untuk tujuan produktif alat dan bahan.
                                 </h3>
-                                <button class="rounded-xl hover:text-white outline outline-1 hover:bg-slate-600 p-2 mt-3 w-full">
-                                    <a href="/zakat-produktif" class="font-semibold">Lihat Selengkapnya</a>
-                                </button>
+                                <a href="/zakat-produktif" class="font-semibold">
+                                    <button class="rounded-xl outline outline-1 hover:bg-slate-600 hover:text-white p-2 mt-3 w-full">Lihat Selengkapnya
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -65,9 +67,10 @@
                                 <h3 class="text-start mt-6">
                                     <span class="font-bold"> Zakat Market</span> bertujuan untuk membuat tempat kerja atau menciptakan lapangan kerja melalui penggunaan dana zakat
                                 </h3>
-                                <button class="rounded-xl hover:text-white outline outline-1 hover:bg-slate-600 p-2 mt-3 w-full">
-                                    <a href="/zakat-market" class="font-semibold">Lihat Selengkapnya</a>
-                                </button>
+                                <a href="/zakat-market" class="font-semibold">
+                                    <button class="rounded-xl outline outline-1 hover:bg-slate-600 hover:text-white p-2 mt-3 w-full">Lihat Selengkapnya
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
