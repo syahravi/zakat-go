@@ -23,12 +23,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('home');
 
-Route::view('/zakat-sekarang', 'user.zakat-sekarang.index');
-Route::view('/zakat-sekarang/{id_zakat_sekarang}', 'user.zakat-sekarang.show');
-Route::view('/zakat-produktif', 'user.zakat-produktif.index');
-Route::view('/zakat-produktif/{id_zakat_produktif}', 'user.zakat-produktif.show');
-Route::view('/zakat-market', 'user.zakat-market.index');
-Route::view('/zakat-market/{id_zakat_market}', 'user.zakat-market.show');
+Route::view('zakat-sekarang', 'user.zakat-sekarang.index');
+Route::view('zakat-sekarang/{id_zakat_sekarang}', 'user.zakat-sekarang.show');
+Route::view('zakat-produktif', 'user.zakat-produktif.index');
+Route::view('zakat-produktif/{id_zakat_produktif}', 'user.zakat-produktif.show');
+Route::view('zakat-market', 'user.zakat-market.index');
+Route::view('zakat-market/{id_zakat_market}', 'user.zakat-market.show');
+
+Route::view('admin/dashboard', 'admin.dashboard');
+Route::view('admin/dashboard/zakat-sekarang', 'admin.zakat-sekarang.index');
+Route::view('admin/dashboard/zakat-produktif', 'admin.zakat-produktif.index');
+Route::view('admin/dashboard/zakat-market', 'admin.zakat-market.index');
+Route::view('admin/dashboard/pengguna', 'admin.users.index');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
