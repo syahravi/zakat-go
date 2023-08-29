@@ -57,10 +57,10 @@ Route::group([
 });
 
 
-Route::view('admin/dashboard/zakat-sekarang', 'admin.zakat-sekarang.index');
-Route::view('admin/dashboard/zakat-produktif', 'admin.zakat-produktif.index');
-Route::view('admin/dashboard/zakat-market', 'admin.zakat-market.index');
-Route::view('admin/dashboard/pengguna', 'admin.users.index');
+// Route::view('admin/dashboard/zakat-sekarang', 'admin.zakat-sekarang.index');
+// Route::view('admin/dashboard/zakat-produktif', 'admin.zakat-produktif.index');
+// Route::view('admin/dashboard/zakat-market', 'admin.zakat-market.index');
+// Route::view('admin/dashboard/pengguna', 'admin.users.index');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
@@ -95,10 +95,23 @@ Route::middleware('auth')->group(function () {
 
 Route::group([
     'middleware' => 'admin',
-    'prefix' => 'admin',
-    'as' => 'admin.',
+    'prefix' => 'admin/dashboard',
+    'as' => 'admin.dashboard.',
     'namespace' => 'App\Http\Controllers\Admin',
-    'controller' => 'DashboardController'
 ], function () {
-    Route::get('dashboard', 'index')->name('dashboard');
+    Route::controller(DashboardController::class)->group(function (){
+        Route::get('/', 'index')->name('dashboard');
+    });
+    Route::controller(ZakatSekarangController::class)->group(function (){
+        Route::get('zakat-sekarang', 'index')->name('zakat-sekarang.index');
+    });
+    Route::controller(ZakatProduktifController::class)->group(function (){
+        Route::get('zakat-produktif', 'index')->name('zakat-produktif.index');
+    });
+    Route::controller(ZakatMarketController::class)->group(function (){
+        Route::get('zakat-market', 'index')->name('zakat-market.index');
+    });
+    Route::controller(UserController::class)->group(function (){
+        Route::get('pengguna', 'index')->name('pengguna.index');
+    });
 });
