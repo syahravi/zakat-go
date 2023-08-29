@@ -63,9 +63,9 @@
                                 <h3 class="text-start">
                                     <span class="font-bold">Zakat Sekarang</span> adalah platform yang memudahkan umat Muslim untuk membayar zakat secara online.
                                 </h3>
-                                <button class="rounded-xl outline outline-1 hover:bg-slate-400 p-2 mt-3 w-full">
-                                    <a href="/singleprogram" class="font-semibold">Lihat Selengkapnya</a>
-                                </button>
+                                <button class="rounded-xl outline outline-1 hover:bg-slate-400 hover:text-white p-2 mt-3 w-full">
+                                    <a href="/zakat-sekarang" class="font-semibold">Lihat Selengkapnya</a>
+                            </button>
                             </div>
                         </div>
                     </div>
