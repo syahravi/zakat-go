@@ -1,6 +1,129 @@
 @extends('layouts.app')
 
 @section('content')
+    <nav class="justify-between shadow-md fixed w-full z-10 bg-white border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#landing" class="flex items-center">
+                <img src="{{ asset('img/logozakat.webp') }}" class="h-10 mr-3" alt="Flowbite Logo" />
+            </a>
+            <button id="mobileMenuToggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-dropdown" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                    <li class="mt-1">
+                        <a href="#landing" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Home</a>
+                    </li>
+                    <li class="mt-1">
+                        <a href="#program" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Program</a>
+                    </li>
+                    <li class="text-center md:flex md:items-center md:justify-center">
+                        <a href="/masuk" class="flex items-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+                            <img src="{{ asset('img/client.webp') }}" alt="akun" class="w-6 h-6 mr-2">
+                            <span class="text-lg font-semibold">Masuk ke Akun</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {{-- landing page start --}}
+    <section id="landing" class="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
+        <div class="absolute inset-0">
+            <img class="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left" src="{{ asset('img/landing.webp') }}" alt="zakat-go" />
+        </div>
+        <div class="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
+        <div class="absolute inset-0 block bg-black/60 md:hidden"></div>
+        <div class="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="text-center md:w-2/3 lg:w-1/2 xl:w-1/3 md:text-left">
+                <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Ambil kendali atas ZakatMu</h2>
+                <p class="mt-4 text-base text-gray-200">ZakatGo adalah platform inovatif untuk memudahkan individu dan organisasi berzakat. Dengan mengedepankan zakatmu atas kendalimu, ZakatGo menyediakan solusi praktis dan efisien.</p>
+            </div>
+        </div>
+    </section>
+    {{-- landing page end --}}
+    <!-- program seksion start -->
+    <section id="program" class="pb-9 pt-9 bg-slate-100 dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl  text-start mb-16">
+                    <h1 class="font-bold text-grey text-4xl mb-2">Program unggulan</h1>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 s">
+                            <div class="flex justify-center">
+                                <img src="{{ asset('img/zakatsekarang.webp') }}" alt="zakatsekarang" class="w-36 mt-6">
+                            </div>
+                            <div class="py-8 px-6">
+                                <h3 class="text-start">
+                                    <span class="font-bold">Zakat Sekarang</span> adalah platform yang memudahkan umat Muslim untuk membayar zakat secara online.
+                                </h3>
+                                <button class="rounded-xl outline outline-1 hover:bg-slate-400 p-2 mt-3 w-full">
+                                    <a href="/singleprogram" class="font-semibold">Lihat Selengkapnya</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 ">
+                            <div class="flex justify-center">
+                                <img src="{{ asset('img/ZAKATproduktif.webp') }}" alt="zakatsekarang" class="w-36 mt-12">
+                            </div>
+                            <div class="py-8 px-6 mt-16">
+                                <h3 class="text-start">
+                                    <span class="font-bold">Zakat Produktif</span> adalah bentuk zakat yang khusus dialokasikan untuk tujuan produktif alat dan bahan.
+                                </h3>
+                                <button class="rounded-xl outline outline-1 hover:bg-slate-400 p-2 mt-3 w-full">
+                                    <a href="/singleprogram" class="font-semibold">Lihat Selengkapnya</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 ">
+                            <div class="flex justify-center">
+                                <img src="{{ asset('img/jaza-zakat.webp') }}" alt="zakatsekarang" class="w-36 mt-8">
+                            </div>
+                            <div class="py-8 px-6">
+                                <h3 class="text-start mt-6">
+                                    <span class="font-bold"> Zakat Market</span> bertujuan untuk membuat tempat kerja atau menciptakan lapangan kerja melalui penggunaan dana zakat
+                                </h3>
+                                <button class="rounded-xl outline outline-1 hover:bg-slate-400 p-2 mt-3 w-full">
+                                    <a href="/singleprogram" class="font-semibold">Lihat Selengkapnya</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- program page end --}}
+    <footer>
+        <div class="p-4 text-center" style="background-color: rgba(0, 0, 0, 0.2)"> © 2023 Copyright: <a class="text-green-800" href="https://www.instagram.com/saeful_mumnin/?igshid=ZDdkNTZiNTM=">ZakatGo</a>
+        </div>
+    </footer>
+    {{-- <h1 class="text-3xl font-bold underline text-center"> Zakat Go </h1>
+					<div class="text-center">
+						<a href="/masuk" class="text-red-800">Masuk</a>
+						<a href="/daftar" class="text-red-800">Daftar</a>
+					</div> --}}
+    <script type="module">
+        $(document).ready(function() {
+            const $mobileMenuToggle = $('#mobileMenuToggle');
+            const $navbarDropdown = $('#navbar-dropdown');
+            $mobileMenuToggle.click(function() {
+                $navbarDropdown.toggleClass('hidden');
+            });
+        });
+    </script>
+@endsection
+{{-- @section('content')
 
     <style>
         @media(prefers-color-scheme: dark){ .bg-dots{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(200,200,255,0.15)'/%3E%3C/svg%3E");}}@media(prefers-color-scheme: light){.bg-dots{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,50,0.10)'/%3E%3C/svg%3E")}}
@@ -114,4 +237,4 @@
             </div>
         </div>
     </div>
-@endsection
+@endsection --}}
