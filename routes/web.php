@@ -57,7 +57,6 @@ Route::group([
 });
 
 
-Route::view('admin/dashboard', 'admin.dashboard');
 Route::view('admin/dashboard/zakat-sekarang', 'admin.zakat-sekarang.index');
 Route::view('admin/dashboard/zakat-produktif', 'admin.zakat-produktif.index');
 Route::view('admin/dashboard/zakat-market', 'admin.zakat-market.index');
@@ -92,4 +91,14 @@ Route::middleware('auth')->group(function () {
 
     Route::post('logout', LogoutController::class)
         ->name('logout');
+});
+
+Route::group([
+    'middleware' => 'admin',
+    'prefix' => 'admin',
+    'as' => 'admin.',
+    'namespace' => 'App\Http\Controllers\Admin',
+    'controller' => 'DashboardController'
+], function () {
+    Route::get('dashboard', 'index')->name('dashboard');
 });
