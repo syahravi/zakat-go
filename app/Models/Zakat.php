@@ -15,7 +15,6 @@ class Zakat extends Model
     protected $primaryKey = "id";
     protected $dates = ['delete_at'];
     protected $fillable = [
-        'id',
         'name',
         'description',
         'amount',
