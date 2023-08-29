@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mx-auto ">
+    <div class="container mx-auto">
         {{-- landing zakat sekarang --}}
         <div class="bg-white">
             <section class="py-10 sm:py-16 lg:py-24">
