@@ -38,7 +38,7 @@
                         </div>
 
                         <div>
-                            <img class="w-full" src="{{ asset('img/3.jpg') }}" alt="zakat market" />
+                            <img class="w-full" src="{{ asset('img/zakatmarket.jpg') }}" alt="zakat market" />
                         </div>
                     </div>
                 </div>
