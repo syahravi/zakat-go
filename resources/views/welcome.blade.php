@@ -20,10 +20,16 @@
                         <a href="#program" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Program</a>
                     </li>
                     <li class="text-center md:flex md:items-center md:justify-center">
-                        <a href="/masuk" class="flex items-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+                        @auth
+                            <form action="/logout" method="POST">
+                                @csrf
+                                <button class="flex items-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded focus:outline-none" type="submit">Logout</button>
+                            </form>
+                        @else
+                            <a href="{{ route('login') }}" class="flex items-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
                             <img src="{{ asset('img/client.webp') }}" alt="akun" class="w-6 h-6 mr-2">
-                            <span class="text-lg font-semibold">Masuk ke Akun</span>
-                        </a>
+                            Masuk ke Akun</a>
+                        @endauth
                     </li>
                 </ul>
             </div>
@@ -55,7 +61,7 @@
             <div class="flex justify-center">
                 <div class="flex flex-wrap justify-center">
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
-                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 s">
+                        <div class="bg-white rounded-xl shadow-2xl overflow-hidden mb-10 s">
                             <div class="flex justify-center">
                                 <img src="{{ asset('img/zakatsekarang.webp') }}" alt="zakatsekarang" class="w-36 mt-6">
                             </div>
@@ -63,14 +69,14 @@
                                 <h3 class="text-start">
                                     <span class="font-bold">Zakat Sekarang</span> adalah platform yang memudahkan umat Muslim untuk membayar zakat secara online.
                                 </h3>
-                                <button class="rounded-xl outline outline-1 hover:bg-slate-400 hover:text-white p-2 mt-3 w-full">
+                                <button class="rounded-xl outline outline-1 hover:bg-slate-600 hover:text-white p-2 mt-3 w-full">
                                     <a href="/zakat-sekarang" class="font-semibold">Lihat Selengkapnya</a>
                             </button>
                             </div>
                         </div>
                     </div>
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
-                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 ">
+                        <div class="bg-white rounded-xl shadow-2xl overflow-hidden mb-10 ">
                             <div class="flex justify-center">
                                 <img src="{{ asset('img/ZAKATproduktif.webp') }}" alt="zakatsekarang" class="w-36 mt-12">
                             </div>
@@ -78,14 +84,14 @@
                                 <h3 class="text-start">
                                     <span class="font-bold">Zakat Produktif</span> adalah bentuk zakat yang khusus dialokasikan untuk tujuan produktif alat dan bahan.
                                 </h3>
-                                <button class="rounded-xl outline outline-1 hover:bg-slate-400 p-2 mt-3 w-full">
-                                    <a href="/singleprogram" class="font-semibold">Lihat Selengkapnya</a>
+                                <button class="rounded-xl hover:text-white outline outline-1 hover:bg-slate-600 p-2 mt-3 w-full">
+                                    <a href="/zakat-produktif" class="font-semibold">Lihat Selengkapnya</a>
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
-                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 ">
+                        <div class="bg-white rounded-xl shadow-2xl overflow-hidden mb-10 ">
                             <div class="flex justify-center">
                                 <img src="{{ asset('img/jaza-zakat.webp') }}" alt="zakatsekarang" class="w-36 mt-8">
                             </div>
@@ -93,8 +99,8 @@
                                 <h3 class="text-start mt-6">
                                     <span class="font-bold"> Zakat Market</span> bertujuan untuk membuat tempat kerja atau menciptakan lapangan kerja melalui penggunaan dana zakat
                                 </h3>
-                                <button class="rounded-xl outline outline-1 hover:bg-slate-400 p-2 mt-3 w-full">
-                                    <a href="/singleprogram" class="font-semibold">Lihat Selengkapnya</a>
+                                <button class="rounded-xl hover:text-white outline outline-1 hover:bg-slate-600 p-2 mt-3 w-full">
+                                    <a href="/zakat-market" class="font-semibold">Lihat Selengkapnya</a>
                                 </button>
                             </div>
                         </div>
