@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome')->name('home');
+
+Route::view('/zakat-sekarang', 'user.zakat-sekarang.index');
