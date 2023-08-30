@@ -36,6 +36,53 @@ dari kata zakka, yang artinya menyucikan dan bisa pula
 berarti mengembangkan. Adapun pengembangan itu
 sendiri bisa ditinjau dari dua aspek, yaitu:
 
+Zakat Produktif dapat disalurkan:
+Asuhan dan pendidikan anak-anak mereka,
+dan pengajaran kitab suci Al-Qur’an bagi fakirmiskin.
+b. Pelatihan-pelatihan seperti pertukangan,
+perdagangan, dan keterampilan lainnya,
+terutama sekali bagi orang-orang yang cacat
+jasmaninya.
+c. Membina bengkel, industri-insdustri untuk
+pekerjaan menjahit dan membuat pakaian jadi.
+d. Membina perindustrian/perkilangan rakyat.
+Membina industri pertanian, peternakan
+unggas, arnab, sarang lebah, perikanan dan
+lain-lain sebagainya
+f. Memberi hak milik tertentu dalam suatu
+proyek usaha atau proyek perdagangan, seperti
+membina kedai-kedai di tempat-tempat yang
+sesuai dengan usahanya, pembangunan geraigerai kecil, pengadaan ice-box untuk menjual
+makanan-makanan ringan (snack) yang
+diawetkan dan lain-lain sebagainya
+g. Persediaan beberapa fasilitas produksi; bahan
+mentah/baku, bahan setengah jadi, yang
+diproduksi oleh orang-orang yang berhak
+menerima zakat (mustahiq), baik individu
+maupun keluarga/kolektif.
+h. Perumahan ekonomis dan sehat, dengan biaya
+ringan, sewa murah untuk perbaikan dan
+pemeliharaan, atau kemudian dihakmilikkan.
+
+1) Fakir-miskin yang mempunyai pekerjaan, dan
+2) Fakir-miskin yang tidak mempunyai pekerjaan.
+Untuk kelompok pertama, mereka diberi zakat
+untuk pekerjaannya atau sarana meningkatkan
+pekerjaannya, baik yang nilai ekonomisnya kecil
+ataupun besar, diukur menurut keperluan umum
+sejauh mana pekerjaan itu boleh mendapatkan
+keuntungan.
+
+## Zakat Produktif
+- Permodalan Zakat
+  - Aplikasinya adalah ‘amil
+meminjamkan sejumlah dana kepada mustahik
+untuk digunakan sebagai modal usaha dengan
+kewajiban mengembalikan pinjaman tersebut tanpa
+kelebihan (imbalan) apapun dalam jangka waktu
+dan kisaran ansuran yang disesuaikan dengan
+keadaan dan kemampuan mustahik.
+
 
 ## Learning Laravel
 
