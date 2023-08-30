@@ -45,7 +45,7 @@
                         <td class="px-5 py-4 ">Admin</td>
                         <td class="px-5 py-4 ">
                             <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                            <a href="#" class="text-red-500 hover:underline ml-2">Delete</a>
+                            <a href="#" class="text-red-500 hover:underline ml-2" data-modal-toggle="deleteModal">Delete</a>
                         </td>
                     </tr>
                     <!-- Add more rows as needed -->
