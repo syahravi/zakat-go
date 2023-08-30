@@ -2,21 +2,21 @@
 
 namespace App\Models;
 
+use App\Traits\Uuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use App\Traits\Uuids;
 
-
-class ZakatSekarang extends Model
+class ZakatProduktif extends Model
 {
     use HasFactory, SoftDeletes, Uuids;
-    protected $table = "zakat_sekarang";
+    protected $table = "zakat_produktif";
     protected $primaryKey = "id";
     protected $dates = ['delete_at'];
     protected $fillable = [
         'name',
         'description',
+        'business',
         'amount',
         'thumbnail_id',
         'type_id',
