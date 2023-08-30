@@ -27,11 +27,7 @@ class ZakatSekarangController extends Controller
     {
         return view('admin.zakat-sekarang.create');
     }
-<<<<<<< HEAD
-    public function edit()
-    {
-        return view('admin.zakat-sekarang.edit');
-=======
+
     public function store(Request $request)
     {
         $request->validate([
@@ -62,7 +58,6 @@ class ZakatSekarangController extends Controller
         ]);
 
         return redirect()->route('admin.dashboard.zakat-sekarang.index');
->>>>>>> origin/ZEN
     }
 }
 
