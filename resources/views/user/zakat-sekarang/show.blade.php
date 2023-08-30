@@ -1,155 +1,143 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mx-auto">
-    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">
-        Bantu Sembako Pejuang Keluarga di Tengah Pandemi Corona
-    </h1>
-
-    <img class="w-full h-auto md:w-2/3 lg:w-1/2 rounded-lg mx-auto" src="{{ asset('img/login.webp') }}"
-        alt="logo" />
-
-    <div class="bg-white max-w-xl mx-auto rounded-lg shadow-md p-6 mb-4">
-        <button type="button"
-            class="w-full px-3 py-2 bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-blue-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-            Zakat Sekarang
-        </button>
-        <p class="mt-3 text-2xl text-green-500 font-bold">Rp.1000.800 </p>
-        <p class="text-dark mt-1">telah terkumpul</p>
-        <p class="text-sm text-gray-600 mt-2">kategori zakat</p>
-    </div>
-
-    <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3">
-        <!-- Headline Accordion -->
-        <div class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
-            <h1 class="accordion-header font-bold mb-0" id="headingOne">
-                <button class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
-                    type="button" data-te-collapse-init data-te-target="#collapseOne" aria-expanded="false"
-                    aria-controls="collapseOne">
-                    info Detail
-                    <span
-                        class="rotate-icon -mr-1 ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </span>
-                </button>
-            </h1>
-            <div id="collapseOne" class="accordion-body">
-                <div class="px-5 py-4">
-                    <div class="bg-white max-w-xl mx-auto rounded-lg shadow-md p-6 mb-4">
-                        <h1 class="mb-2 font-bold">Deskripsi</h1>
-                        <p>"Kemanusiaan itu tak mengenal batas negara dan agama. Ia tumbuh dari keajaiban nuranimu
-                            tanpa sekat, tanpa musim." Helvy Tiana Rosa Sejak akhir Ramadhan, bahkan sampai detik
-                            ini langit Palestina masih merah. Tanda serangan militer Israel terus terjadi,
-                            masyarakat sipil terus diusik.Pedih hati ini mendengar teriakan pilu, tangisan seorang
-                            Ayah, Ibu dan Anak yang harus kehilangan sanak saudaranya, ya Allah...Hassbunallah wa
-                            nikmal wakil nikmal maula wanikman nasir.Ratusan tahun berlalu dan ribua...</p>
-                        <br>
-                        <h1 class="mb-2 font-bold">Detail lokasi</h1>
-                        <div class="bg-slate-500 max-w-xl mx-auto rounded-lg shadow-md p-6 mb-4">
-                            <p class="text-slate-300">Perum. IKIP Gunung Anyar B-48 Surabaya. Telp:
-                                031-8783344. WA: 0878-5252-5300
-
-                                Suraabya, Gunung Anyar
-
-                                Kota Surabaya, Jawa Timur
-
-                                Longitude
-                                Latitude</p>
-                        </div>
+    <section class="py-10 bg-white sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
+                <div class="relative lg:mb-12">
+                    <img class="absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4"
+                        src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg"
+                        alt="" />
+                    <div class="pl-12 pr-6">
+                        <img class="relative"
+                            src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/girl-working-on-laptop.jpg"
+                            alt="" />
+                    </div>
+                    <div class="absolute left-0 pr-12 bottom-8 xl:bottom-20">
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Donatur Accordion -->
-        <div class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
-            <h2 class="accordion-header mb-0" id="headingTwo">
-                <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
-                    type="button" data-te-collapse-init data-te-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
-                    Daftar donasi
-                    <span
-                        class="rotate-icon -mr-1 ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </span>
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-body">
-                <div class="px-5 py-4">
-                    <div class="bg-white max-w-xl mx-auto rounded-lg shadow-md p-6 mb-4">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi fugiat dolorem nostrum
-                            iste corporis ratione optio laborum voluptates unde natus.</p>
-                    </div>
+                <div class="2xl:pl-16">
+                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">We make
+                        judul zakat</h2>
+                    <p class="text-xl leading-relaxed text-gray-900 mt-9">deskripsi.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                <div class="bg-white rounded-lg shadow p-4">
+                    <!-- Isi Card 1 -->
+
+                    <a href="#"
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+                            Info terkait</h5>
+                        <p class="font-normal text-gray-700 bg-green-500 text-center  ">ZakatGo</p>
+                        <button class="bg-yellow-500 w-full p-2 rounded"></button>
+                        <p>total terkumpul</p>
+                        <p>10.0000.00 rp</p>
+                    </a>
+
+                </div>
+                <div class="bg-white rounded-lg shadow p-4">
+                    <!-- Isi Card 2 -->
+
+                    <a href="#"
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">info detail
+                        </h5>
+                        <p class="font-normal text-gray-700 ">Rumah yang berdiri tak tegak ini, disangga oleh beberapa kayu
+                            agar tidak rubuh. Dilihat dari segala sisi, rumah ini hanya ditopang oleh bambu-bambu yang usang
+                            dan kayu yang sudah lapuk.Mendongak ke atas, atap rumah ini tak jauh lebih baik. Sekumpulan daun
+                            kelapa dan rumbia kering digunakan untuk menaungi rumah dari panas dan hujan. Tentu kemampuan
+                            atap ini bisa diukur untuk menghalau hujan yang deras atau angin yang bertiup</p>
+                    </a>
+
+                </div>
+                <div class="bg-white rounded-lg shadow p-4">
+                    <!-- Isi Card 3 -->
+
+                    <a href="#"
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Daftar Donasi</h5>
+
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li class="flex items-center space-x-2">
+                                <img src="foto-profil-1.jpg" alt="Foto Profil 1" class="w-8 h-8 rounded-full">
+                                <span class="text-gray-800">Nama Donatur 1</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img src="foto-profil-2.jpg" alt="Foto Profil 2" class="w-8 h-8 rounded-full">
+                                <span class="text-gray-800">Nama Donatur 2</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img src="foto-profil-3.jpg" alt="Foto Profil 3" class="w-8 h-8 rounded-full">
+                                <span class="text-gray-800">Nama Donatur 3</span>
+                            </li>
+                        </ul>
+
+                    </a>
+
+                </div>
+                <div class="bg-white rounded-lg shadow p-4">
+                    <!-- Isi Card 4 -->
+
+                    <a href="#"
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Berita Terkini
+                        </h5>
+
+                        <ol class="relative border-l border-gray-200 dark:border-gray-700">
+                            <li class="mb-10 ml-4">
+                                <div
+                                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                                </div>
+                                <time
+                                    class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February
+                                    2022</time>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in
+                                    Tailwind CSS</h3>
+                                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over
+                                    20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
+                                    E-commerce & Marketing pages.</p>
+                                <a href="#"
+                                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn
+                                    more <svg class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg></a>
+                            </li>
+                            <li class="mb-10 ml-4">
+                                <div
+                                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                                </div>
+                                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March
+                                    2022</time>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma
+                                </h3>
+                                <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and
+                                    components are first designed in Figma and we keep a parity between the two versions
+                                    even as we update the project.</p>
+                            </li>
+                            <li class="ml-4">
+                                <div
+                                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                                </div>
+                                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April
+                                    2022</time>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in
+                                    Tailwind CSS</h3>
+                                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens
+                                    of
+                                    web components and interactive elements built on top of Tailwind CSS.</p>
+                            </li>
+                        </ol>
+
+                    </a>
+
                 </div>
             </div>
         </div>
-
-        <!-- Info Terkini Accordion -->
-        <div class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
-            <h2 class="accordion-header mb-0" id="headingThree">
-                <button class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
-                    type="button" data-te-collapse-init data-te-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
-                    Accordion Item #3
-                    <span
-                        class="rotate-icon -mr-1 ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </span>
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-body">
-                <div class="px-5 py-4">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                    that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                    does limit overflow.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="fixedButton" class="fixed bottom-4 right-4 z-20 w-screen text-center">
-        <button type="button"
-            class="text-white block w-screen px-6 py-4 bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-blue-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-            Zakat Sekarang
-        </button>
-    </div>
-
-    <script type="module">
-        $(document).ready(function () {
-            $('[data-te-collapse-init]').click(function () {
-                const target = $($(this).data('te-target'));
-                const parent = $(this).closest('[data-te-parent]');
-
-                if (target) {
-                    const isCollapsed = target.hasClass('hidden');
-                    target.toggleClass('hidden', !isCollapsed);
-                    parent.toggleClass('active', !isCollapsed);
-                }
-
-                $('[data-te-collapse-init]').each(function () {
-                    if (this !== this && $(this).data('te-parent') === $(this).data('te-parent')) {
-                        const accTarget = $($(this).data('te-target'));
-                        accTarget.addClass('hidden');
-                        $(this).closest('[data-te-parent]').removeClass('active');
-                    }
-                });
-            });
-        });
-    </script>
-</div>
+    </section>
 @endsection
