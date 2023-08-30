@@ -62,7 +62,8 @@ Route::group([
 // Route::view('admin/dashboard/zakat-market', 'admin.zakat-market.index');
 // Route::view('admin/dashboard/pengguna', 'admin.users.index');
 Route::view('admin/dashboard/muzaki', 'admin.users.muzaki.index')->name('dashboard.muzaki');
-Route::view('admin/dashboard/mustahik', 'admin.users.mustahik.index')->name('dashboard.mustahik');
+Route::view('admin/dashboard/mustahik', 'admin.users.mustahik.index')->name('dashboard.mustahik.index');
+Route::view('admin/dashboard/mustahik/{id_mustahik}', 'admin.users.mustahik.show')->name('dashboard.mustahik.show');
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');
