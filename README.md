@@ -8,18 +8,34 @@
 </p>
 
 ## About Laravel
+Dalam syaratsyarat kebolehan zakat produktif yang diatur
+dalam perundang-undangan di Indonesia, maupun
+kesepakatan ulama-ulama dunia, seperti yang
+dihasilkan dalam konferensi Internasional di Jeddah,
+Kuwait dan Yordan berkenaan dengan syarat bahwa
+zakat baru boleh disalurkan untuk permodalan atau
+untuk usaha produktif, jika semua para mustahik telah
+terpenuhi hak-hak mereka. Itupun disalurkan secara
+cuma-cuma (li at-tamlik) karena tiada pembahasan
+sama sekali tentang kebolehan dipinjamkan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Memperhatikan hakikat
+diturunkannya Islam agar menjadi rahmat bagi seluruh
+Konsep, Peluang dan Pola Pengembangan | ix
+alam, agaknya situasi seperti inilah yang dikehendaki
+oleh Islam.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Jika dirujuk kepada al-Qur’an dan Hadits serta
+pandangan para ulama, kita dapat menemukan suatu
+pandangan bahwa zakat produktif tersebut dibolehkan,
+meskipun tidak dikatakan sangat dianjurkan untuk
+dipraktekkan. Misalnya penafsiran yang bisa dilakukan
+dari firman Allah dalam surat al-Taubah ayat 103. Dalam
+ayat tersebut terdapat lafaz tuzakkihim yang berasal
+dari kata zakka, yang artinya menyucikan dan bisa pula
+berarti mengembangkan. Adapun pengembangan itu
+sendiri bisa ditinjau dari dua aspek, yaitu:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Learning Laravel
 
