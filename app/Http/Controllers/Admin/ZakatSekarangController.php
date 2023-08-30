@@ -7,6 +7,7 @@ use App\Models\File;
 use App\Models\ZakatSekarang;
 use Illuminate\Http\Request;
 
+
 class ZakatSekarangController extends Controller
 {
     public function index()
@@ -26,6 +27,11 @@ class ZakatSekarangController extends Controller
     {
         return view('admin.zakat-sekarang.create');
     }
+<<<<<<< HEAD
+    public function edit()
+    {
+        return view('admin.zakat-sekarang.edit');
+=======
     public function store(Request $request)
     {
         $request->validate([
@@ -56,5 +62,9 @@ class ZakatSekarangController extends Controller
         ]);
 
         return redirect()->route('admin.dashboard.zakat-sekarang.index');
+>>>>>>> origin/ZEN
     }
 }
+
+
+

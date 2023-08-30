@@ -32,6 +32,7 @@ Route::group([
 ], function () {
     Route::get('/', 'index')->name('index');
     Route::get('{id_zakat_sekarang}', 'show')->name('show');
+    
 });
 
 // *Zakat Produktif
@@ -123,6 +124,7 @@ Route::group([
     Route::controller(UserController::class)->group(function (){
         Route::get('pengguna', 'index')->name('pengguna.index');
     });
+    
 });
 Route::fallback(function () {
     return view('errors.404');
