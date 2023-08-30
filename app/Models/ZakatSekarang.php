@@ -24,4 +24,8 @@ class ZakatSekarang extends Model
         'mustahik_id',
         'amil_id',
     ];
+    public function type()
+    {
+        return $this->hasOne(ZakatCategories::class, "id", "type_id");
+    }
 }
