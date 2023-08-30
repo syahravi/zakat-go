@@ -21,11 +21,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
- 
-Route::get('/Not Found', function () {
-    return view('errors.404');
-});
-
 Route::get('/', [WelcomeController::class, 'index'])->name('home');
 
 // *Zakat Sekarang
@@ -122,4 +117,7 @@ Route::group([
     Route::controller(UserController::class)->group(function (){
         Route::get('pengguna', 'index')->name('pengguna.index');
     });
+});
+Route::fallback(function () {
+    return view('errors.404');
 });
