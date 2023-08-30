@@ -41,7 +41,7 @@
                     @foreach ($zakat_sekarang as $zakat)
                         <tr class="bg-white border-b text-black ">
                             <td class="px-5 py-4 ">{{ $zakat->name }}</td>
-                            <td class="px-5 py-4 ">{{ $zakat->type_id }}</td>
+                            <td class="px-5 py-4 ">{{ $zakat->type->categories }}</td>
                             <td class="px-5 py-4 ">Rp{{ $zakat->amount }}</td>
                             <td class="px-5 py-4 ">
                                 <a href="#" class="text-blue-500 hover:underline">Edit</a>
