@@ -110,6 +110,9 @@ Route::group([
     });
     Route::controller(ZakatProduktifController::class)->group(function (){
         Route::get('zakat-produktif', 'index')->name('zakat-produktif.index');
+        Route::get('zakat-produktif/create', 'create')->name('zakat-produktif.create');
+        
+        Route::post('zakat-produktif/store', 'store')->name('zakat-produktif.store');
     });
     Route::controller(ZakatMarketController::class)->group(function (){
         Route::get('zakat-market', 'index')->name('zakat-market.index');
