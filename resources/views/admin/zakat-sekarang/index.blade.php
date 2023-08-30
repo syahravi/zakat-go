@@ -3,7 +3,7 @@
 @section('content')
     <!-- Main Content -->
     <main class="max-w-screen-xl flex-auto m-10"> <!-- Tambahkan kelas "flex justify-end" -->
-        <h1 class="text-2xl font-semibold mb-4">List of Users</h1>
+        <h1 class="text-2xl font-semibold mb-4">Data Zakat Sekarang</h1>
         <a href="{{ route('admin.dashboard.zakat-sekarang.create') }}" type="button"
             class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
             Tambah Data
@@ -24,31 +24,31 @@
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 ">
                     <tr>
                         <th scope="col" class="px-5 py-3">
-                            Name
+                            Judul
                         </th>
                         <th scope="col" class="px-5 py-3">
-                            Email
+                            Jenis Zakat
                         </th>
                         <th scope="col" class="px-5 py-3">
-                            Role
+                            Jumlah
                         </th>
                         <th scope="col" class="px-5 py-3">
-                            Actions
+                            Aksi
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Loop through your users and display them here -->
-                    <tr class="bg-white border-b text-black ">
-                        <td class="px-5 py-4 ">John Doe</td>
-                        <td class="px-5 py-4 ">john@example.com</td>
-                        <td class="px-5 py-4 ">Admin</td>
-                        <td class="px-5 py-4 ">
-                            <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                            <a href="#" class="text-red-500 hover:underline ml-2" data-modal-toggle="deleteModal">Delete</a>
-                        </td>
-                    </tr>
-                    <!-- Add more rows as needed -->
+                    @foreach ($zakat_sekarang as $zakat)
+                        <tr class="bg-white border-b text-black ">
+                            <td class="px-5 py-4 ">{{ $zakat->name }}</td>
+                            <td class="px-5 py-4 ">{{ $zakat->type_id }}</td>
+                            <td class="px-5 py-4 ">Rp{{ $zakat->amount }}</td>
+                            <td class="px-5 py-4 ">
+                                <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                                <a href="#" class="text-red-500 hover:underline ml-2" data-modal-toggle="deleteModal">Delete</a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
