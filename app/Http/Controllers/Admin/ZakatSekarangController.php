@@ -11,7 +11,11 @@ class ZakatSekarangController extends Controller
 {
     public function index()
     {
-        return view('admin.zakat-sekarang.index');
+        $zakat_sekarang = ZakatSekarang::all();
+        $data = [
+            'zakat_sekarang' => $zakat_sekarang
+        ];
+        return view('admin.zakat-sekarang.index', $data);
     }
 
     public function show()
