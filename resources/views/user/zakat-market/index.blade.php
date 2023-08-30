@@ -65,22 +65,56 @@
         </form>
         <h1 class="text-center font-bold text-5xl mt-6"> Daftar Penerima Zakat Market</h1>
         <div id="daftarzakat" class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
-         
-<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-xl">
-    <a href="#">
-        <img class="p-8 rounded-t-lg" src="{{ asset('img/jaza-zakat.webp') }}" alt="product image" />
-    </a>
-    <div class="px-5 pb-5">
-        <a href="#">
-            <h5 class="text-xl font-semibold tracking-tight text-gray-900 ">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
-        </a>
-        <div class="flex items-center mt-2 justify-between">
-            <span class="text-3xl font-bold text-gray-900 ">$599</span>
-            <a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Beli Sekarang</a>
-        </div>
-    </div>
-</div>
-   
+
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-xl">
+                <a href="#">
+                    <img class="p-8 rounded-t-lg" src="{{ asset('img/jaza-zakat.webp') }}" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 ">Apple Watch Series 7 GPS, Aluminium
+                            Case, Starlight Sport</h5>
+                    </a>
+                    <div x-data="{ showModal: false, namaPenerima: '', alamat: '' }">
+                        <div class="flex items-center mt-2 justify-between">
+                            <span class="text-3xl font-bold text-gray-900">$599</span>
+                            <button @click="showModal = true"
+                                class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                Beli Sekarang
+                            </button>
+                        </div>
+
+                        <div x-show="showModal" class="fixed inset-0 flex items-center justify-center z-50">
+                            <div class="modal-overlay absolute inset-0 bg-gray-500 opacity-75"></div>
+
+                            <div class="modal-container bg-white w-96 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                <div class="modal-content py-4 text-left px-6">
+                                    <h2 class="text-2xl font-semibold mb-4">Beli Sekarang</h2>
+                                    <form @submit.prevent="submitForm">
+                                        <div class="mb-4">
+                                            <label class="block text-sm font-medium text-gray-700">Nama Penerima</label>
+                                            <input x-model="namaPenerima"
+                                                class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="block text-sm font-medium text-gray-700">Alamat</label>
+                                            <textarea x-model="alamat" class="mt-1 p-2 border border-gray-300 rounded-md w-full"></textarea>
+                                        </div>
+                                        <div class="text-right">
+                                            <button type="button" @click="showModal = false"
+                                                class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-800">Batal</button>
+                                            <button type="submit"
+                                                class="ml-2 px-4 py-2 bg-green-700 text-white rounded-md hover:bg-green-800">Beli</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
     </div>
