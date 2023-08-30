@@ -24,4 +24,8 @@ class ZakatProduktif extends Model
         'mustahik_id',
         'amil_id',
     ];
+    public function amil()
+    {
+        return $this->hasOne(User::class, "id", "amil_id");
+    }
 }

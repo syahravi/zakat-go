@@ -5,14 +5,17 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\File;
 use App\Models\ZakatProduktif;
-use App\Models\ZakatSekarang;
 use Illuminate\Http\Request;
 
 class ZakatProduktifController extends Controller
 {
     public function index()
     {
-        return view('admin.zakat-produktif.index');
+        $zakat_produktif = ZakatProduktif::all();
+        $data = [
+            'zakat_produktif' => $zakat_produktif
+        ];
+        return view('admin.zakat-produktif.index', $data);
     }
 
     public function create()

@@ -3,6 +3,7 @@
 @section('content')
     <!-- Main Content -->
     <main class="max-w-screen-xl flex-auto m-10"> <!-- Tambahkan kelas "flex justify-end" -->
+        <h1 class="text-2xl font-semibold mb-4">Buat Zakat Produktif</h1>
         <form action="{{ route('admin.dashboard.zakat-produktif.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="my-4">

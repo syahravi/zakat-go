@@ -24,7 +24,7 @@
                 id="amount" name="amount" type="number" placeholder="Jumlah">
             </div>
             <div class="my-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="thumbnail">Thumbnail</label>
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="thumbnail">Gambar Pendukung</label>
                 <input class="border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="thumbnail" name="thumbnail" type="file" accept="image/*">
             </div>

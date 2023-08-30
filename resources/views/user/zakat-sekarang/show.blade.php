@@ -18,9 +18,8 @@
                 </div>
 
                 <div class="2xl:pl-16">
-                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">We make
-                        judul zakat</h2>
-                    <p class="text-xl leading-relaxed text-gray-900 mt-9">deskripsi.</p>
+                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">{{ $zakat->name }}</h2>
+                    <p class="text-xl leading-relaxed text-gray-900 mt-9">{{ $zakat->description }}</p>
                 </div>
             </div>
 
@@ -32,13 +31,13 @@
                     <p class="font-normal text-gray-700 bg-green-500 text-center  ">ZakatGo</p>
                     <button class="bg-yellow-500 w-full p-2 rounded"></button>
                     <p>total terkumpul</p>
-                    <p>10.0000.00 rp</p>
+                    <p>Rp{{ $zakat->amount }}</p>
 
 
                 </div>
                 <div class="bg-white rounded-lg shadow p-4">
                     <!-- Isi Card 2 -->
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">info detail
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Info Detail
                     </h5>
                     <p class="font-normal text-gray-700 ">Rumah yang berdiri tak tegak ini, disangga oleh beberapa kayu
                         agar tidak rubuh. Dilihat dari segala sisi, rumah ini hanya ditopang oleh bambu-bambu yang usang
@@ -49,9 +48,9 @@
 
                 <div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
                     <div class="flex items-center justify-between mb-4">
-                        <h5 class="text-xl font-bold leading-none text-gray-900 ">Latest Customers</h5>
+                        <h5 class="text-xl font-bold leading-none text-gray-900 ">Daftar Donatur</h5>
                         <a href="#" class="text-sm font-medium text-blue-600 hover:underline ">
-                            View all
+                            Selengkapnya
                         </a>
                     </div>
                     <div class="flow-root">
@@ -67,11 +66,11 @@
                                             Neil Sims
                                         </p>
                                         <p class="text-sm text-gray-500 truncate ">
-                                            email@windster.com
+                                            12 Agustus 2023
                                         </p>
                                     </div>
                                     <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
-                                        $320
+                                        Rp320000.00
                                     </div>
                                 </div>
                             </li>
@@ -86,11 +85,11 @@
                                             Bonnie Green
                                         </p>
                                         <p class="text-sm text-gray-500 truncate ">
-                                            email@windster.com
+                                            12 Agustus 2023
                                         </p>
                                     </div>
                                     <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
-                                        $3467
+                                        Rp320000.00
                                     </div>
                                 </div>
                             </li>
@@ -105,11 +104,11 @@
                                             Michael Gough
                                         </p>
                                         <p class="text-sm text-gray-500 truncate ">
-                                            email@windster.com
+                                            12 Agustus 2023
                                         </p>
                                     </div>
                                     <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
-                                        $67
+                                        Rp320000.00
                                     </div>
                                 </div>
                             </li>
@@ -124,11 +123,11 @@
                                             Lana Byrd
                                         </p>
                                         <p class="text-sm text-gray-500 truncate ">
-                                            email@windster.com
+                                            12 Agustus 2023
                                         </p>
                                     </div>
                                     <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
-                                        $367
+                                        Rp320000.00
                                     </div>
                                 </div>
                             </li>
@@ -143,11 +142,11 @@
                                             Thomes Lean
                                         </p>
                                         <p class="text-sm text-gray-500 truncate ">
-                                            email@windster.com
+                                            12 Agustus 2023
                                         </p>
                                     </div>
                                     <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
-                                        $2367
+                                        Rp320000.00
                                     </div>
                                 </div>
                             </li>

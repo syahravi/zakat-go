@@ -28,4 +28,8 @@ class ZakatSekarang extends Model
     {
         return $this->hasOne(ZakatCategories::class, "id", "type_id");
     }
+    public function amil()
+    {
+        return $this->hasOne(User::class, "id", "amil_id");
+    }
 }
