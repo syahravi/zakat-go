@@ -21,6 +21,7 @@
                     </li>
                     <li class="text-center md:flex md:items-center md:justify-center">
                         @auth
+                        <a href="admin/dashboard" class=" me-2 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Dasboard</a>
                             <form action="/logout" method="POST">
                                 @csrf
                                 <button class="flex items-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded focus:outline-none" type="submit">Logout</button>
