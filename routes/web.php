@@ -108,10 +108,6 @@ Route::group([
     Route::controller(ZakatSekarangController::class)->group(function (){
         Route::get('zakat-sekarang', 'index')->name('zakat-sekarang.index');
         Route::get('zakat-sekarang/create', 'create')->name('zakat-sekarang.create');
-<<<<<<< HEAD
-        Route::get('zakat-sekarang/edit', 'edit')->name('zakat-sekarang.edit');
-=======
->>>>>>> origin/ZEN
     });
     Route::controller(ZakatProduktifController::class)->group(function (){
         Route::get('zakat-produktif', 'index')->name('zakat-produktif.index');
@@ -127,10 +123,6 @@ Route::group([
     });
     
 });
-<<<<<<< HEAD
-
-=======
 Route::fallback(function () {
     return view('errors.404');
 });
->>>>>>> c4b4fa86518f25754d992b64350d8eed0b1d1f88
