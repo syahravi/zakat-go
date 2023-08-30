@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ZakatSekarangController extends Controller
+class ZakatMarketController extends Controller
 {
     public function index()
     {
-        return view('user.zakat-sekarang.index');
+        return view('user.zakat-market.index');
     }
 
     public function show()
     {
-        return view('user.zakat-sekarang.show');
+        return view('user.zakat-market.show');
     }
 }
