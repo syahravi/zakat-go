@@ -76,7 +76,32 @@ kelebihan (imbalan) apapun dalam jangka waktu
 dan kisaran ansuran yang disesuaikan dengan
 keadaan dan kemampuan mustahik.
 
+- Laporan berjenjang dengan ketentuan
+sebagai berikut:
+a. lembaga pengelola zakat pada tingkat
+kabupaten / kota menyampaikan laporan
+kepada BAZNAS tingkat provinsi dan bu
+pati/ walikota;
+b. lembaga pengelola zakat pada tingkat provinsi
+menyampaikan laporan kepada BAZNAS dan
+gubernur; dan
+c. BAZNAS menyampaikan laporan kepada
+Menteri.
+d. Laporan yang dimksud disampaikan setiap 6
+(enam) bulan dan akhir tahun. paling sedikit
+memuat:
+• identitas mustahik
+• identitas lembaga pengelola zakat;
+• jenis usaha produktif;
+• lokasi usaha produktif;
+• jumlah dana yang disalurkan ; dan
+• perkembangan usahanya.
 
+- Pendayagunaan Mustahik
+  1. Melatihan keuangan.
+  2. Melakukan pemantauan (monitoring), pengendalian (kontrol) dan pengawalan; 
+  3. Mengadakan evaluasi; dan 
+  4. Membuat laporan. 
 ## Learning Laravel
 
 - composer install
