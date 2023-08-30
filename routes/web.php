@@ -121,4 +121,10 @@ Route::group([
     });
     
 });
+<<<<<<< HEAD
 
+=======
+Route::fallback(function () {
+    return view('errors.404');
+});
+>>>>>>> c4b4fa86518f25754d992b64350d8eed0b1d1f88

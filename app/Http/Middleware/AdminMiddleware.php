@@ -18,7 +18,7 @@ class AdminMiddleware
         if (auth()->user() && auth()->user()->role_id == 1) {
             return $next($request);
         } else {
-            return redirect('/');
+                return redirect('tidak-tersedia');
         }
     }
 }

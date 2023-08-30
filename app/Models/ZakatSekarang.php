@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Traits\Uuids;
 
 
-class Zakat extends Model
+class ZakatSekarang extends Model
 {
     use HasFactory, SoftDeletes, Uuids;
     protected $table = "zakat";
@@ -18,9 +18,10 @@ class Zakat extends Model
         'name',
         'description',
         'amount',
-        'id_thumbnail',
+        'thumbnail_id',
         'type_id',
         'admin_id',
-        'partner_id',
+        'mustahik_id',
+        'amil_id',
     ];
 }
