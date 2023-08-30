@@ -104,7 +104,7 @@
                         class="w-full px-3 py-2 bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300"></button>
                     <p class="mt-1 text-green-500 font-bold">Rp.1000.800 </p>
                     <p class="text-dark mt-1">telah terkumpul</p>
-                    <a href="/zakat-sekarang/{id_zakat_sekarang"
+                    <a href="/zakat-produktif/{id_zakat_produktif"
                         class="mt-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                         Lihat Selengkapnya
                         <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"

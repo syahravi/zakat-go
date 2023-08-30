@@ -32,6 +32,7 @@ Route::group([
 ], function () {
     Route::get('/', 'index')->name('index');
     Route::get('{id_zakat_sekarang}', 'show')->name('show');
+    
 });
 
 // *Zakat Produktif
@@ -106,7 +107,8 @@ Route::group([
     });
     Route::controller(ZakatSekarangController::class)->group(function (){
         Route::get('zakat-sekarang', 'index')->name('zakat-sekarang.index');
-        Route::get('zakat-sekarang/create', 'store')->name('zakat-sekarang.store');
+        Route::get('zakat-sekarang/create', 'create')->name('zakat-sekarang.create');
+        Route::get('zakat-sekarang/edit', 'edit')->name('zakat-sekarang.edit');
     });
     Route::controller(ZakatProduktifController::class)->group(function (){
         Route::get('zakat-produktif', 'index')->name('zakat-produktif.index');
@@ -117,4 +119,6 @@ Route::group([
     Route::controller(UserController::class)->group(function (){
         Route::get('pengguna', 'index')->name('pengguna.index');
     });
+    
 });
+

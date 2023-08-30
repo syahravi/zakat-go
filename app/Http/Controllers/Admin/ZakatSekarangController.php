@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+
 class ZakatSekarangController extends Controller
 {
     public function index()
@@ -16,8 +17,15 @@ class ZakatSekarangController extends Controller
     {
         // return view('admin.zakat-sekarang.show');
     }
-    public function store()
+    public function create()
     {
         return view('admin.zakat-sekarang.create');
     }
+    public function edit()
+    {
+        return view('admin.zakat-sekarang.edit');
+    }
 }
+
+
+
