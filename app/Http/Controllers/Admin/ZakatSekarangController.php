@@ -16,7 +16,7 @@ class ZakatSekarangController extends Controller
     {
         // return view('admin.zakat-sekarang.show');
     }
-    public function store()
+    public function create()
     {
         return view('admin.zakat-sekarang.create');
     }
